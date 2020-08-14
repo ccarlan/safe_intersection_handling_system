@@ -5,4 +5,4 @@ According to definitions and taxonomy provided by the SAEJ3016 standard regardin
 
 The SoI enables automated control of the ego vehicle to handle urban intersections while operating in real world conditions. The SoI is able to acquire local data from sensors and remote data from the infrastructure describing the TPO and VRU located and their location inside the intersection. By considering this data, the proposed SoI generates lateral and longitudinal controls actions towards in vehicle systems to control the dynamic of the ego vehicle.
 
-More coming soon ...
+More here: https://docs.google.com/document/d/1iWzbJGdzgOiWqosmjXk6jpOp_bdnvyGel3jW2QzIyrc/edit?usp=sharing
