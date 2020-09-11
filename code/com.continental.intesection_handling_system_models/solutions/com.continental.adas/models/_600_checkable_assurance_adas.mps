@@ -15,6 +15,9 @@
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
   </imports>
   <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
+    </language>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
       <concept id="1629165016568013909" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternInstance" flags="ng" index="1VB52A">
         <reference id="1094571097530678975" name="originalDefinition" index="AygKy" />
@@ -2907,6 +2910,12 @@
       </node>
     </node>
     <node concept="0lH3_" id="2TfVCPOL$GN" role="1QQeBF" />
+  </node>
+  <node concept="2HdtXS" id="xcDA29tJ33">
+    <property role="TrG5h" value="_650_intersection_handling_arch" />
+    <node concept="2dDAVa" id="xcDA29tJ35" role="2HcuB8">
+      <property role="TrG5h" value="Lidar" />
+    </node>
   </node>
 </model>
 
