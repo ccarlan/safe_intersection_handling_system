@@ -76,13 +76,19 @@
       <concept id="8278132229936590137" name="com.mbeddr.formal.safety.gsn.patterns.structure.ArgumentOverHazardsStrategy" flags="ng" index="FXfxu" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781863305066" name="com.mbeddr.formal.nusmv.structure.IntervalType" flags="ng" index="dhpfj">
+        <child id="2295987781863305067" name="left" index="dhpfi" />
+        <child id="2295987781863305070" name="right" index="dhpfn" />
+      </concept>
       <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
         <property id="2707707741261637861" name="documentation" index="sUxOX" />
       </concept>
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="8482728081215670238" name="com.mbeddr.formal.nusmv.structure.IntegerType" flags="ng" index="1yFZfx" />
     </language>
     <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
       <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
@@ -93,6 +99,11 @@
         <property id="6025137760892770342" name="asil" index="2FkWVS" />
       </concept>
       <concept id="7926133672146485940" name="com.mbeddr.formal.safety.req.structure.OperatingContextReqKind" flags="ng" index="3ZsCCw" />
+    </language>
+    <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
+        <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
       <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
@@ -125,6 +136,13 @@
       </concept>
     </language>
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="7526568111199935988" name="com.mbeddr.formal.nusmv.ext.structure.IntervalDeclaration" flags="ng" index="2XEm0_">
+        <child id="7526568111199936052" name="lower" index="2XEmf_" />
+        <child id="7526568111199936055" name="upper" index="2XEmfA" />
+      </concept>
+      <concept id="7526568111199936003" name="com.mbeddr.formal.nusmv.ext.structure.IntervalTypeExtended" flags="ng" index="2XEmfi">
+        <reference id="7526568111199936004" name="intervalDeclaration" index="2XEmfl" />
+      </concept>
       <concept id="1258148499700303837" name="com.mbeddr.formal.nusmv.ext.structure.DocumentationMultiline" flags="ng" index="3I9x2T" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -173,6 +191,17 @@
         <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
         <property id="2392944874760387682" name="severity" index="1a6$Vd" />
       </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
+      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
@@ -2913,8 +2942,210 @@
   </node>
   <node concept="2HdtXS" id="xcDA29tJ33">
     <property role="TrG5h" value="_650_intersection_handling_arch" />
+    <node concept="2XEm0_" id="xcDA29tJQC" role="2HcuB8">
+      <property role="TrG5h" value="distance_to_object" />
+      <node concept="2IPVmt" id="xcDA29tJRs" role="2XEmf_">
+        <property role="2IPVms" value="0" />
+      </node>
+      <node concept="2IPVmt" id="xcDA29tJRI" role="2XEmfA">
+        <property role="2IPVms" value="180" />
+      </node>
+    </node>
+    <node concept="2XEm0_" id="xcDA29tKks" role="2HcuB8">
+      <property role="TrG5h" value="speed_value" />
+      <node concept="2IPVmt" id="xcDA29tKme" role="2XEmf_">
+        <property role="2IPVms" value="0" />
+      </node>
+      <node concept="2IPVmt" id="xcDA29tKmw" role="2XEmfA">
+        <property role="2IPVms" value="200" />
+      </node>
+    </node>
+    <node concept="2XEm0_" id="xcDA29tKpa" role="2HcuB8">
+      <property role="TrG5h" value="temp_value" />
+      <node concept="2IPVmt" id="xcDA29tKr6" role="2XEmf_">
+        <property role="2IPVms" value="-40" />
+      </node>
+      <node concept="2IPVmt" id="xcDA29tKro" role="2XEmfA">
+        <property role="2IPVms" value="85" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tJQ1" role="2HcuB8" />
     <node concept="2dDAVa" id="xcDA29tJ35" role="2HcuB8">
       <property role="TrG5h" value="Lidar" />
+      <node concept="3UnI9n" id="xcDA29tJap" role="3UnI90">
+        <property role="TrG5h" value="distanceToObject" />
+        <node concept="2XEmfi" id="xcDA29tJS2" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tJQC" resolve="distance_to_object" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="xcDA29tJbA" role="3UnI90">
+        <property role="TrG5h" value="angle" />
+        <node concept="1yFZfx" id="xcDA29tJVT" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tJWt" role="3UnI90">
+        <property role="TrG5h" value="scanRate" />
+        <node concept="1yFZfx" id="xcDA29tJXa" role="3UnI80" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tJct" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tJcT" role="2HcuB8">
+      <property role="TrG5h" value="Radar" />
+      <node concept="3UnI9n" id="xcDA29tJe1" role="3UnI90">
+        <property role="TrG5h" value="distanceToObject" />
+        <node concept="2XEmfi" id="xcDA29tJSw" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tJQC" resolve="distance_to_object" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="xcDA29tJfq" role="3UnI90">
+        <property role="TrG5h" value="lateralDeviation" />
+        <node concept="1yFZfx" id="xcDA29tJVJ" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tJXj" role="3UnI90">
+        <property role="TrG5h" value="refreshRate" />
+        <node concept="1yFZfx" id="xcDA29tJY4" role="3UnI80" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tJd9" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tJdH" role="2HcuB8">
+      <property role="TrG5h" value="Camera" />
+      <node concept="3UnI9n" id="xcDA29tJeK" role="3UnI90">
+        <property role="TrG5h" value="image" />
+        <node concept="1yFZfx" id="xcDA29tJV_" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tJYd" role="3UnI90">
+        <property role="TrG5h" value="fps" />
+        <node concept="1yFZfx" id="xcDA29tJZa" role="3UnI80" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tJSS" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tJUk" role="2HcuB8">
+      <property role="TrG5h" value="ImageProcessing" />
+      <node concept="3UnI9n" id="xcDA29tJZj" role="3UnI90">
+        <property role="TrG5h" value="distanceToObjects" />
+        <node concept="2XEmfi" id="xcDA29tJZQ" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tJQC" resolve="distance_to_object" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="xcDA29tJV4" role="3UnI9m">
+        <property role="TrG5h" value="image" />
+        <node concept="1yFZfx" id="xcDA29tJVr" role="3UnI80" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tK26" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tK4q" role="2HcuB8">
+      <property role="TrG5h" value="ThreeWayJunctionInfrastructureSensing" />
+      <node concept="3UnI9n" id="xcDA29tKda" role="3UnI90">
+        <property role="TrG5h" value="distanceToObjects_EAST" />
+        <node concept="2XEmfi" id="xcDA29tKeX" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tJQC" resolve="distance_to_object" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKfl" role="3UnI90">
+        <property role="TrG5h" value="distanceToObjects_WEST" />
+        <node concept="2XEmfi" id="xcDA29tKgl" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tJQC" resolve="distance_to_object" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKgH" role="3UnI90">
+        <property role="TrG5h" value="distanceToObjects_SOUTH" />
+        <node concept="2XEmfi" id="xcDA29tKhL" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tJQC" resolve="distance_to_object" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tK5A" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tK82" role="2HcuB8">
+      <property role="TrG5h" value="EgoVehicleSensing" />
+      <node concept="3UnI9n" id="xcDA29tKit" role="3UnI90">
+        <property role="TrG5h" value="speed" />
+        <node concept="2XEmfi" id="xcDA29tKmI" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tKks" resolve="speed_value" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tK9i" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tKbQ" role="2HcuB8">
+      <property role="TrG5h" value="ContextSensing" />
+      <node concept="3UnI9n" id="xcDA29tKn6" role="3UnI90">
+        <property role="TrG5h" value="temperature" />
+        <node concept="2XEmfi" id="xcDA29tKsi" role="3UnI80">
+          <ref role="2XEmfl" node="xcDA29tKpa" resolve="temp_value" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKz0" role="3UnI90">
+        <property role="TrG5h" value="luminosity" />
+        <node concept="1yFZfx" id="xcDA29tKzD" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKzM" role="3UnI90">
+        <property role="TrG5h" value="humidity" />
+        <node concept="1yFZfx" id="xcDA29tK$q" role="3UnI80" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tJg8" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tJhc" role="2HcuB8">
+      <property role="TrG5h" value="IntersectionHandling" />
+      <node concept="3UnI9n" id="xcDA29tKEj" role="3UnI90">
+        <property role="TrG5h" value="accelerationReq" />
+        <node concept="1yFZfx" id="xcDA29tKF7" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKFg" role="3UnI90">
+        <property role="TrG5h" value="decelerationReq" />
+        <node concept="1yFZfx" id="xcDA29tKFZ" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKGn" role="3UnI90">
+        <property role="TrG5h" value="steeringReq" />
+        <node concept="1yFZfx" id="xcDA29tKH1" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKHa" role="3UnI90">
+        <property role="TrG5h" value="standstillReq" />
+        <node concept="2Hds6S" id="xcDA29tKIa" role="3UnI80" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tK$z" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tKCn" role="2HcuB8">
+      <property role="TrG5h" value="MotionControl" />
+      <node concept="3UnI9n" id="xcDA29tKIy" role="3UnI90">
+        <property role="TrG5h" value="rpm" />
+        <node concept="dhpfj" id="xcDA29tKQy" role="3UnI80">
+          <node concept="2IPVmt" id="xcDA29tKQx" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="xcDA29tKR2" role="dhpfn">
+            <property role="2IPVms" value="9000" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKT7" role="3UnI90">
+        <property role="TrG5h" value="gear" />
+        <node concept="1yFZfx" id="xcDA29tKVp" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKVy" role="3UnI90">
+        <property role="TrG5h" value="brakingForce" />
+        <node concept="1yFZfx" id="xcDA29tKWo" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKWK" role="3UnI90">
+        <property role="TrG5h" value="steeringAngle" />
+        <node concept="1yFZfx" id="xcDA29tKXE" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="xcDA29tKYD" role="3UnI90">
+        <property role="TrG5h" value="parkingBrakeReq" />
+        <node concept="2Hds6S" id="xcDA29tL0a" role="3UnI80" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="xcDA29tKJl" role="2HcuB8" />
+    <node concept="2dDAVa" id="xcDA29tKNT" role="2HcuB8">
+      <property role="TrG5h" value="Engine" />
+      <node concept="3UnI81" id="xcDA29tKQd" role="3UnI9m">
+        <property role="TrG5h" value="desiredRPM" />
+        <node concept="dhpfj" id="xcDA29tKS6" role="3UnI80">
+          <node concept="2IPVmt" id="xcDA29tKS5" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="xcDA29tKSA" role="dhpfn">
+            <property role="2IPVms" value="9000" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
