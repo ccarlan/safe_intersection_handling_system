@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/com.continental.adas/com.continental.adas.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/intersection_handling_system/intersection_handling_system.msd" folder="" />
     </projectModules>
   </component>
 </project>

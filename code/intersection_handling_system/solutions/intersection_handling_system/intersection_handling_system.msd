@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.continental.adas" uuid="af0640ad-00c4-46bd-8b91-373ba95b874a" moduleVersion="0" compileInMPS="true">
+<solution name="intersection_handling_system" uuid="af0640ad-00c4-46bd-8b91-373ba95b874a" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -56,8 +56,8 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="af0640ad-00c4-46bd-8b91-373ba95b874a(com.continental.adas)" version="0" />
     <module reference="676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)" version="0" />
+    <module reference="af0640ad-00c4-46bd-8b91-373ba95b874a(intersection_handling_system)" version="0" />
   </dependencyVersions>
 </solution>
 
