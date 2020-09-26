@@ -1,4 +1,4 @@
-<h1>An Intersection Handling System</h1>
+<h1>An Automated Intersection Handling System</h1>
 
 In this project, we provide a set of assurance models for an intersection handling system. The system of interest (SoI) enables automated control of the ego vehicle to handle urban intersections while operating in real world conditions. The SoI is able to acquire local data from sensors and remote data from the infrastructure describing the TPO and VRU located and their location inside the intersection. By considering this data, the proposed SoI generates lateral and longitudinal controls actions towards in vehicle systems to control the dynamic of the ego vehicle.
 
