@@ -4,6 +4,8 @@ In this project, we provide a set of assurance models for an intersection handli
 
 According to definitions and taxonomy provided by the SAEJ3016 standard regarding on-road motor vehicle automated driving systems, the system in scope for our analysis is classified as a SAE level 3 automated system. A SAE level 3 in vehicle automation system, controls the vehicle when enabled within a constrained ODD and requests the driver to take over control of the vehicle when the specified conditions inside the ODD are not longer met. While handling intersections limited visibility can expose traffic participants to hazardous scenarios potentially leading to severe accidents. The scope of the system is to reduce the number of accidents that end with severe injuries or loss of life by enabling an additional level of control over the dynamic behavior of the target vehicle in coping with traffic participants and occupants (TPO) and vulnerable road users (VRU) approaching and interacting in an urban intersection environment. In the description of the operational design domain (ODD) for our SOI, the term VRU refers to pedestrians and bicyclists, while TPO refers to trucks, passenger cars and motorcycles. 
 
+A more comprehensive description of the system and the results of our safety assurance may be found <a href="https://docs.google.com/document/d/1iWzbJGdzgOiWqosmjXk6jpOp_bdnvyGel3jW2QzIyrc/edit?usp=sharing">here</a>.
+
 <h2>Models in FASTEN</h2>
 
 The models have been created in <a href="https://sites.google.com/site/fastenroot/features/">FASTEN</a>.
@@ -36,7 +38,7 @@ To trigger the checks, you can do the following changes in the FASTEN models:
  
 <h2>Published papers</h2>
 
-Checkable Safety Cases: Enabling Automated Consistency Checks between Safety Work Products - Carmen Carlan, Daniel Petrișor, Barbara Gallina and Hannes Schoenhaar
+Checkable Safety Cases: Enabling Automated Consistency Checks between Safety Work Products - Carmen Carlan, Daniel Petrișor, Barbara Gallina and Hannes Schoenhaar (WoSoCer 2020)
 
 
 
