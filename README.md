@@ -38,7 +38,7 @@ To trigger the checks, you can do the following changes in the FASTEN models:
  
 <h2>Published papers</h2>
 
-Checkable Safety Cases: Enabling Automated Consistency Checks between Safety Work Products - Carmen Carlan, Daniel Petrișor, Barbara Gallina and Hannes Schoenhaar (WoSoCer 2020)
+<i>Checkable Safety Cases: Enabling Automated Consistency Checks between Safety Work Products</i> - Carmen Carlan, Daniel Petrișor, Barbara Gallina and Hannes Schoenhaar (WoSoCer 2020)
 
 
 
