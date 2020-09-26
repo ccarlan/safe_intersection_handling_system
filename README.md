@@ -6,10 +6,9 @@ According to definitions and taxonomy provided by the SAEJ3016 standard regardin
 
 <h2>Models in FASTEN</h2>
 
-The models have been created in <a href="https://sites.google.com/site/fastenroot/features/">FASTEN</a>
+The models have been created in <a href="https://sites.google.com/site/fastenroot/features/">FASTEN</a>.
 
-Printscreens of all models may be found <a href=" https://docs.google.com/document/d/1iWzbJGdzgOiWqosmjXk6jpOp_bdnvyGel3jW2QzIyrc/edit?usp=sharing
-">here</a>
+Printscreens of all models may be found <a href="https://docs.google.com/document/d/1iWzbJGdzgOiWqosmjXk6jpOp_bdnvyGel3jW2QzIyrc/edit?usp=sharing">here</a>.
 
 To visualize and manipulate the models in FASTEN, you need to:
 
@@ -23,7 +22,11 @@ To visualize and manipulate the models in FASTEN, you need to:
 
 The safety case models in the project are "checkable", meaning that, given certain changes in other models, automated consistency checks will be executed to identify the impact the respective change has on the safety case of the system. 
 
-So far, the following consistency checks are supported:
+So far, the following consistency checks are supported in FASTEN: 
+
+<b>Reference existence check:</b> Evaluation of whether the model elements referenced in the safety case model are available. This check supports the confirmation review objective C.10.3 from ISO 26262-2.
+
+<b>Argument completeness check:</b> The safety argumentation shall be sufficient to argue about functional safety (see confirmation review objective C.10.2 from ISO 26262-2). For example, a safety argument shall go over all identified hazards, i.e., for each identified hazard there shall be a specialized goal claiming that the risk associated to the respective hazard has been reduced.
 
 To trigger the checks, you can do the following changes in the FASTEN models:
 
