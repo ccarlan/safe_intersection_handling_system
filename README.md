@@ -8,11 +8,11 @@ A more comprehensive description of the system and the results of our safety ass
 
 <h2>Models in FASTEN</h2>
 
-The models have been created in <a href="https://sites.google.com/site/fastenroot/features/">FASTEN</a>.
+The models have been created in <a href="https://sites.google.com/site/fastenroot/features/">FASTEN</a>, a model-driven engineering environment for rigorous specification and assurance. At the core of FASTEN there are integrated domain specific models (for e.g. safety engineering, scenarios, requirements, architecture, assurance) that provide traceability and can be easily kept consistent with each other.
 
-Printscreens of all models may be found <a href="https://docs.google.com/document/d/1iWzbJGdzgOiWqosmjXk6jpOp_bdnvyGel3jW2QzIyrc/edit?usp=sharing">here</a>.
+Printscreens of all models we developed in FASTEN may be found <a href="https://docs.google.com/document/d/1iWzbJGdzgOiWqosmjXk6jpOp_bdnvyGel3jW2QzIyrc/edit?usp=sharing">here</a>.
 
-To visualize and manipulate the models in FASTEN, you need to:
+To visualize and manipulate the models developed in FASTEN, you need to:
 
 1. Download FASTEN (the release based on MPS 2020.1.2) from here: https://sites.google.com/site/fastenroot/download;
 2. Clone the project in this git repository on your computer;
@@ -32,7 +32,7 @@ So far, the following consistency checks are supported in FASTEN:
 
 To trigger the checks, you can do the following changes in the FASTEN models:
 
-1. Delete a hazard from the hazard table that can be found in the <i>_625_smart_intersection_hazards_list</i> model (e.g., H01). Then go to the <i>_671_smart_intersection_risk_based_argumentation</i> model - you will notice that an error has been triggered by the automated consistency checks;
+1. Delete a hazard from the hazard table that can be found in the <i>_625_ihs_hazards_list</i> model (e.g., H01). Then go to the <i>_671_ihs_risk_based_argumentation</i> model - you will notice that an error has been triggered by the automated consistency checks;
 
 ...
  
